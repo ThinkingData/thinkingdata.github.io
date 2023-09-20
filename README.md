@@ -18,10 +18,11 @@
 - [Cocos2d-Lua SDK](./ta-cocos2d-lua-api-doc/index.html)
 
 ## Server SDK API Documents
-- [Java SDK](./ta-server-api-doc/index.html)
-- [Golang SDK](./ta-server-api-doc/index.html)
-- [Node SDK](./ta-server-api-doc/index.html)
-- [PHP SDK](./ta-server-api-doc/index.html)
-- [C# SDK](./ta-server-api-doc/index.html)
-- [Lua SDK](./ta-server-api-doc/index.html)
-- [Python SDK](./ta-server-api-doc/index.html)
+- [Java SDK](./ta-server-java-api-doc/index.html)
+- [!Golang SDK](./ta-server-api-doc/index.html)
+- [Node SDK](./ta-server-node-api-doc/index.html)
+- [!PHP SDK](./ta-server-api-doc/index.html)
+- [!C# SDK](./ta-server-api-doc/index.html)
+- [!Lua SDK](./ta-server-api-doc/index.html)
+- [!Python SDK](./ta-server-api-doc/index.html)
+- [Erlang SDK](./ta-server-erlang-api-doc/index.html)

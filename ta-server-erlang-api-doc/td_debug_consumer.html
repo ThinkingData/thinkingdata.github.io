@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Module td_debug_consumer</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" title="EDoc">
+</head>
+<body bgcolor="white">
+<div class="navbar"><a name="#navbar_top"></a><table width="100%" border="0" cellspacing="0" cellpadding="2" summary="navigation bar"><tr><td><a href="overview-summary.html" target="overviewFrame">Overview</a></td><td><a href="http://www.erlang.org/"><img src="erlang.png" align="right" border="0" alt="erlang logo"></a></td></tr></table></div>
+<hr>
+
+<h1>Module td_debug_consumer</h1>
+<ul class="index"><li><a href="#description">Description</a></li><li><a href="#types">Data Types</a></li><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
+   Used to verify data accuracy.
+<p>Copyright © (C) 2022, &lt;COMPANY&gt;</p>
+
+<p><b>Authors:</b> ThinkingData.</p>
+
+<h2><a name="description">Description</a></h2>
+   Used to verify data accuracy
+<h2><a name="types">Data Types</a></h2>
+
+<h3 class="typedecl"><a name="type-app_id">app_id()</a></h3>
+<p><tt>app_id() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-device_id">device_id()</a></h3>
+<p><tt>device_id() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-is_write">is_write()</a></h3>
+<p><tt>is_write() = boolean()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-server_url">server_url()</a></h3>
+<p><tt>server_url() = string()</tt></p>
+
+
+<h2><a name="index">Function Index</a></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#add-1">add/1</a></td><td>Add event.</td></tr>
+<tr><td valign="top"><a href="#add_with_instance-2">add_with_instance/2</a></td><td>(API_v2) Add event.</td></tr>
+<tr><td valign="top"><a href="#close-0">close/0</a></td><td>Close SDK.</td></tr>
+<tr><td valign="top"><a href="#close_with_instance-1">close_with_instance/1</a></td><td>(API_v2) Close SDK.</td></tr>
+<tr><td valign="top"><a href="#config_app_id-1">config_app_id/1</a></td><td>Set app id.</td></tr>
+<tr><td valign="top"><a href="#config_device_id-1">config_device_id/1</a></td><td>Set device id.</td></tr>
+<tr><td valign="top"><a href="#config_is_write-1">config_is_write/1</a></td><td>Whether to record the debug data to TE.</td></tr>
+<tr><td valign="top"><a href="#config_server_url-1">config_server_url/1</a></td><td>Set server url.</td></tr>
+<tr><td valign="top"><a href="#flush-0">flush/0</a></td><td>Flush data immediately.</td></tr>
+<tr><td valign="top"><a href="#flush_with_instance-1">flush_with_instance/1</a></td><td>(API_v2) Flush data immediately.</td></tr>
+<tr><td valign="top"><a href="#init-0">init/0</a></td><td>Init debug consumer.</td></tr>
+<tr><td valign="top"><a href="#init_with_config-4">init_with_config/4</a></td><td>Init debug consumer with config.</td></tr>
+</table>
+
+<h2><a name="functions">Function Details</a></h2>
+
+<h3 class="function"><a name="add-1">add/1</a></h3>
+<div class="spec">
+<p><tt>add(E::<a href="thinking_analytics_sdk.html#type-event">thinking_analytics_sdk:event()</a>) -&gt; term()</tt><br></p>
+</div><p>Add event</p>
+
+<h3 class="function"><a name="add_with_instance-2">add_with_instance/2</a></h3>
+<div class="spec">
+<p><tt>add_with_instance(Consumer::<a href="td_analytics.html#type-td_debug_consumer">td_analytics:td_debug_consumer()</a>, E::<a href="td_analytics.html#type-event">td_analytics:event()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Add event</p>
+
+<h3 class="function"><a name="close-0">close/0</a></h3>
+<div class="spec">
+<p><tt>close() -&gt; term()</tt><br></p>
+</div><p>Close SDK</p>
+
+<h3 class="function"><a name="close_with_instance-1">close_with_instance/1</a></h3>
+<div class="spec">
+<p><tt>close_with_instance(Consumer::<a href="td_analytics.html#type-td_debug_consumer">td_analytics:td_debug_consumer()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Close SDK</p>
+
+<h3 class="function"><a name="config_app_id-1">config_app_id/1</a></h3>
+<div class="spec">
+<p><tt>config_app_id(AppId::string()) -&gt; term()</tt><br></p>
+</div><p>Set app id</p>
+
+<h3 class="function"><a name="config_device_id-1">config_device_id/1</a></h3>
+<div class="spec">
+<p><tt>config_device_id(DeviceId::string()) -&gt; term()</tt><br></p>
+</div><p>Set device id</p>
+
+<h3 class="function"><a name="config_is_write-1">config_is_write/1</a></h3>
+<div class="spec">
+<p><tt>config_is_write(IsWrite::boolean()) -&gt; term()</tt><br></p>
+</div><p>Whether to record the debug data to TE. True: record the data. False: don't record the data, validate only</p>
+
+<h3 class="function"><a name="config_server_url-1">config_server_url/1</a></h3>
+<div class="spec">
+<p><tt>config_server_url(Url::string()) -&gt; term()</tt><br></p>
+</div><p>Set server url</p>
+
+<h3 class="function"><a name="flush-0">flush/0</a></h3>
+<div class="spec">
+<p><tt>flush() -&gt; term()</tt><br></p>
+</div><p>Flush data immediately. don't need invoke.</p>
+
+<h3 class="function"><a name="flush_with_instance-1">flush_with_instance/1</a></h3>
+<div class="spec">
+<p><tt>flush_with_instance(Consumer::<a href="td_analytics.html#type-td_debug_consumer">td_analytics:td_debug_consumer()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Flush data immediately. don't need invoke.</p>
+
+<h3 class="function"><a name="init-0">init/0</a></h3>
+<div class="spec">
+<p><tt>init() -&gt; term()</tt><br></p>
+</div><p>Init debug consumer</p>
+
+<h3 class="function"><a name="init_with_config-4">init_with_config/4</a></h3>
+<div class="spec">
+<p><tt>init_with_config(ServerUrl::<a href="#type-server_url">server_url()</a>, AppId::<a href="#type-app_id">app_id()</a>, IsWrite::<a href="#type-is_write">is_write()</a>, DeviceId::<a href="#type-device_id">device_id()</a>) -&gt; term()</tt><br></p>
+</div><p>Init debug consumer with config</p>
+<hr>
+
+<div class="navbar"><a name="#navbar_bottom"></a><table width="100%" border="0" cellspacing="0" cellpadding="2" summary="navigation bar"><tr><td><a href="overview-summary.html" target="overviewFrame">Overview</a></td><td><a href="http://www.erlang.org/"><img src="erlang.png" align="right" border="0" alt="erlang logo"></a></td></tr></table></div>
+<p><i>Generated by EDoc</i></p>
+</body>
+</html>

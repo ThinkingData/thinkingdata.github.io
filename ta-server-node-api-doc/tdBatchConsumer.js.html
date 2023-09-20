@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>tdBatchConsumer.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="TDAnalytics.html">TDAnalytics</a><ul class='methods'><li data-type='method'><a href="TDAnalytics.html#clearSuperProperties">clearSuperProperties</a></li><li data-type='method'><a href="TDAnalytics.html#close">close</a></li><li data-type='method'><a href="TDAnalytics.html#flush">flush</a></li><li data-type='method'><a href="TDAnalytics.html#setDynamicSuperProperties">setDynamicSuperProperties</a></li><li data-type='method'><a href="TDAnalytics.html#setSuperProperties">setSuperProperties</a></li><li data-type='method'><a href="TDAnalytics.html#track">track</a></li><li data-type='method'><a href="TDAnalytics.html#trackFirst">trackFirst</a></li><li data-type='method'><a href="TDAnalytics.html#trackOverWrite">trackOverWrite</a></li><li data-type='method'><a href="TDAnalytics.html#trackUpdate">trackUpdate</a></li><li data-type='method'><a href="TDAnalytics.html#userAdd">userAdd</a></li><li data-type='method'><a href="TDAnalytics.html#userAppend">userAppend</a></li><li data-type='method'><a href="TDAnalytics.html#userDel">userDel</a></li><li data-type='method'><a href="TDAnalytics.html#userSet">userSet</a></li><li data-type='method'><a href="TDAnalytics.html#userSetOnce">userSetOnce</a></li><li data-type='method'><a href="TDAnalytics.html#userUniqAppend">userUniqAppend</a></li><li data-type='method'><a href="TDAnalytics.html#userUnset">userUnset</a></li></ul></li><li><a href="TDBatchConsumer.html">TDBatchConsumer</a></li><li><a href="TDDebugConsumer.html">TDDebugConsumer</a></li><li><a href="TDTrackEvent.html">TDTrackEvent</a></li><li><a href="TDTrackFirstEvent.html">TDTrackFirstEvent</a></li><li><a href="TDTrackOverwriteEvent.html">TDTrackOverwriteEvent</a></li><li><a href="TDTrackUpdateEvent.html">TDTrackUpdateEvent</a></li><li><a href="TDUserProfileEvent.html">TDUserProfileEvent</a></li><li><a href="TDUserUnsetEvent.html">TDUserUnsetEvent</a></li></ul><h3>Global</h3><ul><li><a href="global.html#enableLog">enableLog</a></li><li><a href="global.html#initWithAsyncBatchMode">initWithAsyncBatchMode</a></li><li><a href="global.html#initWithBatchMode">initWithBatchMode</a></li><li><a href="global.html#initWithDebugMode">initWithDebugMode</a></li><li><a href="global.html#initWithLoggingMode">initWithLoggingMode</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">tdBatchConsumer.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>let Buffer = require('buffer').Buffer,
+    zlib = require('zlib'),
+    _ = require('./tdUtils');
+const {TDLog} = require("./tdLog");
+
+const DEFAULT_BATCH_SIZE = 20;
+
+class TDBatchConsumer {
+    /**
+     * Construct batch consumer. You don't need call it directly
+     * @param appId {string} app id
+     * @param serverConfig {object} server config
+     * @param consumerConfig {object} config
+     */
+    constructor(appId, serverConfig, consumerConfig = {}) {
+        this.config = serverConfig;
+        this.appId = appId;
+        this.buffer = [];
+        this.batchSize = consumerConfig.batchSize || DEFAULT_BATCH_SIZE;
+        this.enableLog = consumerConfig.enableLog;
+        this.compress = consumerConfig.compress !== false;
+    }
+
+    add(msg, callback) {
+        let eventStr = JSON.stringify(msg);
+        TDLog.info('Enqueue event:', eventStr);
+
+        this.buffer.push(eventStr);
+        if (this.buffer.length >= this.batchSize) {
+            this.flush(callback);
+        }
+    }
+
+    flush(callback) {
+        if (this.buffer.length === 0) {
+            return;
+        }
+
+        TDLog.info('flush buffer event, count:', this.buffer.length);
+
+        callback = callback || function () {
+        };
+
+        let request_options = {
+            host: this.config.hostname,
+            port: this.config.port,
+            headers: {
+                'Content-Type': 'application/plaintext',
+                'appid': this.appId,
+                'compress': this.compress ? 'gzip' : 'none',
+                'TA-Integration-Type': 'Node',
+                'TA-Integration-Version': _.version,
+                'TA-Integration-Count': this.buffer.length.toString()
+            },
+            method: 'POST',
+            path: '/sync_server',
+        };
+
+        const content = Buffer.from('[' + this.buffer.join(',') + ']', 'utf-8');
+        if (this.enableLog) {
+            _.log('Sending: ' + content.toString('utf-8'));
+        }
+
+        this.buffer = [];
+
+        if (this.compress) {
+            zlib.gzip(content, (err, buffer) => {
+                if (err) {
+                    callback(err);
+                    return;
+                }
+
+                request_options.headers['Content-Length'] = Buffer.byteLength(buffer);
+                this._request(request_options, buffer, callback);
+            });
+        } else {
+            request_options.headers['Content-Length'] = content.length;
+            this._request(request_options, content, callback);
+        }
+    }
+
+    _request(request_options, data, callback) {
+        let enableLog = this.enableLog;
+        let request = this.config.requestLib.request(request_options, function (res) {
+            if (res.statusCode === 200) {
+                let resp = "";
+                res.on('data', function (chunk) {
+                    resp += chunk;
+                });
+                res.on('end', function () {
+                    let e;
+                    try {
+                        let result = JSON.parse(resp);
+                        TDLog.info('Send event, response =', result);
+
+                        if (result.code !== 0) {
+                            e = new Error('Unexpected result code: ' + result.code + ', msg: ' + result.msg);
+                        }
+                    } catch (ex) {
+                        TDLog.error('parse response error:', ex);
+                        e = new Error("Could not parse response from ThinkingAnalytics");
+                    }
+
+                    callback(e);
+                });
+            } else {
+                callback(new Error("Unexpected status code: " + res.statusCode));
+            }
+        });
+
+        request.on('error', function (e) {
+            TDLog.error('http error:', e.message);
+            callback(e);
+        });
+
+        request.write(data);
+        request.end();
+    }
+
+    close() {
+        this.flush();
+    }
+}
+
+module.exports = {
+    init: function (appId, serverConfig, consumerConfig) {
+        return new TDBatchConsumer(appId, serverConfig, consumerConfig);
+    }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Wed Sep 20 2023 15:51:51 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

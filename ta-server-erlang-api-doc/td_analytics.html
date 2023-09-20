@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Module td_analytics</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" title="EDoc">
+</head>
+<body bgcolor="white">
+<div class="navbar"><a name="#navbar_top"></a><table width="100%" border="0" cellspacing="0" cellpadding="2" summary="navigation bar"><tr><td><a href="overview-summary.html" target="overviewFrame">Overview</a></td><td><a href="http://www.erlang.org/"><img src="erlang.png" align="right" border="0" alt="erlang logo"></a></td></tr></table></div>
+<hr>
+
+<h1>Module td_analytics</h1>
+<ul class="index"><li><a href="#description">Description</a></li><li><a href="#types">Data Types</a></li><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
+   SDK entry.
+<p>Copyright © (C) 2022, &lt;COMPANY&gt;</p>
+
+<p><b>Authors:</b> ThinkingData.</p>
+
+<h2><a name="description">Description</a></h2>
+   SDK entry
+<h2><a name="types">Data Types</a></h2>
+
+<h3 class="typedecl"><a name="type-account_id">account_id()</a></h3>
+<p><tt>account_id() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-consumer_type">consumer_type()</a></h3>
+<p><tt>consumer_type() = '?CONSUMER_TYPE_LOG' | '?CONSUMER_TYPE_DEBUG'</tt></p>
+
+
+<h3 class="typedecl"><a name="type-distinct_id">distinct_id()</a></h3>
+<p><tt>distinct_id() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-event">event()</a></h3>
+<p><tt>event() = #{eventName =&gt; <a href="#type-event_name">event_name()</a>, accountId =&gt; <a href="#type-account_id">account_id()</a>, distinctId =&gt; <a href="#type-distinct_id">distinct_id()</a>, type =&gt; <a href="#type-event_type">event_type()</a>, time =&gt; string(), eventId =&gt; <a href="#type-event_id">event_id()</a>, firstCheckId =&gt; <a href="#type-first_check_id">first_check_id()</a>, ip =&gt; string(), uuid =&gt; string(), properties =&gt; <a href="#type-properties">properties()</a>}</tt></p>
+
+
+<h3 class="typedecl"><a name="type-event_id">event_id()</a></h3>
+<p><tt>event_id() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-event_name">event_name()</a></h3>
+<p><tt>event_name() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-event_type">event_type()</a></h3>
+<p><tt>event_type() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-first_check_id">first_check_id()</a></h3>
+<p><tt>first_check_id() = string()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-operation">operation()</a></h3>
+<p><tt>operation() = #{'?FUNC_ADD' =&gt; function(), '?FUNC_FLUSH' =&gt; function(), '?FUNC_CLOSE' =&gt; function()}</tt></p>
+
+
+<h3 class="typedecl"><a name="type-properties">properties()</a></h3>
+<p><tt>properties() = map()</tt></p>
+
+
+<h3 class="typedecl"><a name="type-td_analytics">td_analytics()</a></h3>
+<p><tt>td_analytics() = #td_analytics{}</tt></p>
+
+
+<h2><a name="index">Function Index</a></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#close-0">close/0</a></td><td>Close SDK.</td></tr>
+<tr><td valign="top"><a href="#close_instance-1">close_instance/1</a></td><td>(API_v2) Close SDK.</td></tr>
+<tr><td valign="top"><a href="#consumer_type_debug-0">consumer_type_debug/0</a></td><td>Get consumer type: debug.</td></tr>
+<tr><td valign="top"><a href="#consumer_type_log-0">consumer_type_log/0</a></td><td>Get consumer type: log.</td></tr>
+<tr><td valign="top"><a href="#flush-0">flush/0</a></td><td>Flush data.</td></tr>
+<tr><td valign="top"><a href="#flush_instance-1">flush_instance/1</a></td><td>(API_v2) Flush data.</td></tr>
+<tr><td valign="top"><a href="#init-1">init/1</a></td><td>Init SDK.</td></tr>
+<tr><td valign="top"><a href="#init_with_consumer-1">init_with_consumer/1</a></td><td>(API_v2) Init SDK.</td></tr>
+<tr><td valign="top"><a href="#track-4">track/4</a></td><td>Ordinary event.</td></tr>
+<tr><td valign="top"><a href="#track_first-5">track_first/5</a></td><td>First event.</td></tr>
+<tr><td valign="top"><a href="#track_first_instance-6">track_first_instance/6</a></td><td>(API_v2) First event.</td></tr>
+<tr><td valign="top"><a href="#track_instance-5">track_instance/5</a></td><td>(API_v2) Ordinary event.</td></tr>
+<tr><td valign="top"><a href="#track_overwrite-5">track_overwrite/5</a></td><td>Overwrite event.</td></tr>
+<tr><td valign="top"><a href="#track_overwrite_instance-6">track_overwrite_instance/6</a></td><td>(API_v2) Overwrite event.</td></tr>
+<tr><td valign="top"><a href="#track_update-5">track_update/5</a></td><td>Updatable event.</td></tr>
+<tr><td valign="top"><a href="#track_update_instance-6">track_update_instance/6</a></td><td>(API_v2) Updatable event.</td></tr>
+<tr><td valign="top"><a href="#user_add-3">user_add/3</a></td><td>To accumulate operations against the property.</td></tr>
+<tr><td valign="top"><a href="#user_add_instance-4">user_add_instance/4</a></td><td>(API_v2) To accumulate operations against the property.</td></tr>
+<tr><td valign="top"><a href="#user_append-3">user_append/3</a></td><td>To add user properties of array type.</td></tr>
+<tr><td valign="top"><a href="#user_append_instance-4">user_append_instance/4</a></td><td>(API_v2) To add user properties of array type.</td></tr>
+<tr><td valign="top"><a href="#user_del-2">user_del/2</a></td><td>Delete a user.</td></tr>
+<tr><td valign="top"><a href="#user_del_instance-3">user_del_instance/3</a></td><td>(API_v2) Delete a user.</td></tr>
+<tr><td valign="top"><a href="#user_set-3">user_set/3</a></td><td>Set user properties.</td></tr>
+<tr><td valign="top"><a href="#user_set_instance-4">user_set_instance/4</a></td><td>(API_v2) Set user properties.</td></tr>
+<tr><td valign="top"><a href="#user_set_once-3">user_set_once/3</a></td><td>If such property had been set before, this message would be neglected.</td></tr>
+<tr><td valign="top"><a href="#user_set_once_instance-4">user_set_once_instance/4</a></td><td>(API_v2) If such property had been set before, this message would be neglected.</td></tr>
+<tr><td valign="top"><a href="#user_unique_append-3">user_unique_append/3</a></td><td>Add user properties of array type.</td></tr>
+<tr><td valign="top"><a href="#user_unique_append_instance-4">user_unique_append_instance/4</a></td><td>(API_v2) Add user properties of array type.</td></tr>
+<tr><td valign="top"><a href="#user_unset-3">user_unset/3</a></td><td>Clear the user properties of users.</td></tr>
+<tr><td valign="top"><a href="#user_unset_instance-4">user_unset_instance/4</a></td><td>(API_v2) Clear the user properties of users.</td></tr>
+</table>
+
+<h2><a name="functions">Function Details</a></h2>
+
+<h3 class="function"><a name="close-0">close/0</a></h3>
+<div class="spec">
+<p><tt>close() -&gt; term()</tt><br></p>
+</div><p>Close SDK</p>
+
+<h3 class="function"><a name="close_instance-1">close_instance/1</a></h3>
+<div class="spec">
+<p><tt>close_instance(SDK::<a href="#type-td_analytics">td_analytics()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Close SDK</p>
+
+<h3 class="function"><a name="consumer_type_debug-0">consumer_type_debug/0</a></h3>
+<div class="spec">
+<p><tt>consumer_type_debug() -&gt; term()</tt><br></p>
+</div><p>Get consumer type: debug</p>
+
+<h3 class="function"><a name="consumer_type_log-0">consumer_type_log/0</a></h3>
+<div class="spec">
+<p><tt>consumer_type_log() -&gt; term()</tt><br></p>
+</div><p>Get consumer type: log</p>
+
+<h3 class="function"><a name="flush-0">flush/0</a></h3>
+<div class="spec">
+<p><tt>flush() -&gt; term()</tt><br></p>
+</div><p>Flush data</p>
+
+<h3 class="function"><a name="flush_instance-1">flush_instance/1</a></h3>
+<div class="spec">
+<p><tt>flush_instance(SDK::<a href="#type-td_analytics">td_analytics()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Flush data</p>
+
+<h3 class="function"><a name="init-1">init/1</a></h3>
+<div class="spec">
+<p><tt>init(Type::<a href="#type-consumer_type">consumer_type()</a>) -&gt; term()</tt><br></p>
+</div><p>Init SDK</p>
+
+<h3 class="function"><a name="init_with_consumer-1">init_with_consumer/1</a></h3>
+<div class="spec">
+<p><tt>init_with_consumer(Consumer::#{}) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Init SDK. Return td_analytics record</p>
+
+<h3 class="function"><a name="track-4">track/4</a></h3>
+<div class="spec">
+<p><tt>track(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>Ordinary event</p>
+
+<h3 class="function"><a name="track_first-5">track_first/5</a></h3>
+<div class="spec">
+<p><tt>track_first(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, FirstCheckId::<a href="#type-first_check_id">first_check_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>First event</p>
+
+<h3 class="function"><a name="track_first_instance-6">track_first_instance/6</a></h3>
+<div class="spec">
+<p><tt>track_first_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, FirstCheckId::<a href="#type-first_check_id">first_check_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) First event</p>
+
+<h3 class="function"><a name="track_instance-5">track_instance/5</a></h3>
+<div class="spec">
+<p><tt>track_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Ordinary event</p>
+
+<h3 class="function"><a name="track_overwrite-5">track_overwrite/5</a></h3>
+<div class="spec">
+<p><tt>track_overwrite(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, EventId::<a href="#type-event_id">event_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>Overwrite event</p>
+
+<h3 class="function"><a name="track_overwrite_instance-6">track_overwrite_instance/6</a></h3>
+<div class="spec">
+<p><tt>track_overwrite_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, EventId::<a href="#type-event_id">event_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Overwrite event</p>
+
+<h3 class="function"><a name="track_update-5">track_update/5</a></h3>
+<div class="spec">
+<p><tt>track_update(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, EventId::<a href="#type-event_id">event_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>Updatable event</p>
+
+<h3 class="function"><a name="track_update_instance-6">track_update_instance/6</a></h3>
+<div class="spec">
+<p><tt>track_update_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, EventName::<a href="#type-event_name">event_name()</a>, EventId::<a href="#type-event_id">event_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Updatable event</p>
+
+<h3 class="function"><a name="user_add-3">user_add/3</a></h3>
+<div class="spec">
+<p><tt>user_add(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>To accumulate operations against the property</p>
+
+<h3 class="function"><a name="user_add_instance-4">user_add_instance/4</a></h3>
+<div class="spec">
+<p><tt>user_add_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) To accumulate operations against the property</p>
+
+<h3 class="function"><a name="user_append-3">user_append/3</a></h3>
+<div class="spec">
+<p><tt>user_append(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>To add user properties of array type</p>
+
+<h3 class="function"><a name="user_append_instance-4">user_append_instance/4</a></h3>
+<div class="spec">
+<p><tt>user_append_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) To add user properties of array type</p>
+
+<h3 class="function"><a name="user_del-2">user_del/2</a></h3>
+<div class="spec">
+<p><tt>user_del(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>) -&gt; term()</tt><br></p>
+</div><p>Delete a user</p>
+
+<h3 class="function"><a name="user_del_instance-3">user_del_instance/3</a></h3>
+<div class="spec">
+<p><tt>user_del_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Delete a user</p>
+
+<h3 class="function"><a name="user_set-3">user_set/3</a></h3>
+<div class="spec">
+<p><tt>user_set(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>Set user properties. would overwrite existing names</p>
+
+<h3 class="function"><a name="user_set_instance-4">user_set_instance/4</a></h3>
+<div class="spec">
+<p><tt>user_set_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Set user properties. would overwrite existing names</p>
+
+<h3 class="function"><a name="user_set_once-3">user_set_once/3</a></h3>
+<div class="spec">
+<p><tt>user_set_once(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>If such property had been set before, this message would be neglected.</p>
+
+<h3 class="function"><a name="user_set_once_instance-4">user_set_once_instance/4</a></h3>
+<div class="spec">
+<p><tt>user_set_once_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) If such property had been set before, this message would be neglected.</p>
+
+<h3 class="function"><a name="user_unique_append-3">user_unique_append/3</a></h3>
+<div class="spec">
+<p><tt>user_unique_append(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>Add user properties of array type. delete duplicated user property</p>
+
+<h3 class="function"><a name="user_unique_append_instance-4">user_unique_append_instance/4</a></h3>
+<div class="spec">
+<p><tt>user_unique_append_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, Properties::<a href="#type-properties">properties()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Add user properties of array type. delete duplicated user property</p>
+
+<h3 class="function"><a name="user_unset-3">user_unset/3</a></h3>
+<div class="spec">
+<p><tt>user_unset(AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, PropertiesList::<a href="erlang.html#type-list">erlang:list()</a>) -&gt; term()</tt><br></p>
+</div><p>Clear the user properties of users</p>
+
+<h3 class="function"><a name="user_unset_instance-4">user_unset_instance/4</a></h3>
+<div class="spec">
+<p><tt>user_unset_instance(Instance::<a href="#type-td_analytics">td_analytics()</a>, AccountId::<a href="#type-account_id">account_id()</a>, DistinctId::<a href="#type-distinct_id">distinct_id()</a>, PropertiesList::<a href="erlang.html#type-list">erlang:list()</a>) -&gt; term()</tt><br></p>
+</div><p>(API_v2) Clear the user properties of users</p>
+<hr>
+
+<div class="navbar"><a name="#navbar_bottom"></a><table width="100%" border="0" cellspacing="0" cellpadding="2" summary="navigation bar"><tr><td><a href="overview-summary.html" target="overviewFrame">Overview</a></td><td><a href="http://www.erlang.org/"><img src="erlang.png" align="right" border="0" alt="erlang logo"></a></td></tr></table></div>
+<p><i>Generated by EDoc</i></p>
+</body>
+</html>

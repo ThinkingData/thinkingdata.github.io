@@ -1,0 +1,6 @@
+%% encoding: UTF-8
+{application,thinkingdata_analytics}.
+{modules,[example_cowboy_handler,example_debug_batch_consumer,
+          example_log_consumer,example_start_cowboy,td_analytics,
+          td_debug_consumer,td_lager_rotator,td_log_consumer,td_utils,td_uuid,
+          thinkingdata_analytics_app,thinkingdata_analytics_sup]}.
