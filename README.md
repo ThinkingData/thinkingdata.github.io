@@ -2,7 +2,7 @@
 
 # TDAnalytics
 
-[ThinkingData](https://www.thinkingdata.cn) Analytics SDK API Documents.
+[ThinkingData](https://thinkingdata.io) Analytics SDK API Documents.
 
 ## Client SDK API Documents
 - [Unity SDK](./ta-unity-api-doc/index.html)
