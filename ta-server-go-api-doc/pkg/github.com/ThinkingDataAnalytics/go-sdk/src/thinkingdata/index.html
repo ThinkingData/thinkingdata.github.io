@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>thinkingdata - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.16";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://10.208.100.133:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://10.208.100.133:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://10.208.100.133:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package thinkingdata
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#SetCustomLogger">func SetCustomLogger(logger TDLogger)</a></dd>
+			
+				
+				<dd><a href="index.html#SetLogLevel">func SetLogLevel(level TDLogLevel)</a></dd>
+			
+				
+				<dd><a href="index.html#SetLoggerConfig">func SetLoggerConfig(config LoggerConfig)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Consumer">type Consumer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Data">type Data</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LogConfig">type LogConfig</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LogConsumer">type LogConsumer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LogType">type LogType</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LoggerConfig">type LoggerConfig</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RotateMode">type RotateMode</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TDAnalytics">type TDAnalytics</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#New">func New(c TDConsumer) TDAnalytics</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.ClearSuperProperties">func (ta *TDAnalytics) ClearSuperProperties()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.Close">func (ta *TDAnalytics) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.Flush">func (ta *TDAnalytics) Flush() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.GetDynamicSuperProperties">func (ta *TDAnalytics) GetDynamicSuperProperties() map[string]interface{}</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.GetSuperProperties">func (ta *TDAnalytics) GetSuperProperties() map[string]interface{}</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.SetDynamicSuperProperties">func (ta *TDAnalytics) SetDynamicSuperProperties(action func() map[string]interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.SetSuperProperties">func (ta *TDAnalytics) SetSuperProperties(superProperties map[string]interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.Track">func (ta *TDAnalytics) Track(accountId, distinctId, eventName string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.TrackFirst">func (ta *TDAnalytics) TrackFirst(accountId, distinctId, eventName, firstCheckId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.TrackOverwrite">func (ta *TDAnalytics) TrackOverwrite(accountId, distinctId, eventName, eventId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.TrackUpdate">func (ta *TDAnalytics) TrackUpdate(accountId, distinctId, eventName, eventId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserAdd">func (ta *TDAnalytics) UserAdd(accountId string, distinctId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserAppend">func (ta *TDAnalytics) UserAppend(accountId string, distinctId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserDelete">func (ta *TDAnalytics) UserDelete(accountId string, distinctId string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserSet">func (ta *TDAnalytics) UserSet(accountId string, distinctId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserSetOnce">func (ta *TDAnalytics) UserSetOnce(accountId string, distinctId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserUniqAppend">func (ta *TDAnalytics) UserUniqAppend(accountId string, distinctId string, properties map[string]interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDAnalytics.UserUnset">func (ta *TDAnalytics) UserUnset(accountId string, distinctId string, s []string) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TDBatchConfig">type TDBatchConfig</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TDBatchConsumer">type TDBatchConsumer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDBatchConsumer.Add">func (c *TDBatchConsumer) Add(d Data) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDBatchConsumer.Close">func (c *TDBatchConsumer) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDBatchConsumer.Flush">func (c *TDBatchConsumer) Flush() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDBatchConsumer.FlushAll">func (c *TDBatchConsumer) FlushAll() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDBatchConsumer.IsStringent">func (c *TDBatchConsumer) IsStringent() bool</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TDConsumer">type TDConsumer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewBatchConsumer">func NewBatchConsumer(serverUrl string, appId string) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewBatchConsumerWithBatchSize">func NewBatchConsumerWithBatchSize(serverUrl string, appId string, batchSize int) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewBatchConsumerWithCompress">func NewBatchConsumerWithCompress(serverUrl string, appId string, compress bool) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewBatchConsumerWithConfig">func NewBatchConsumerWithConfig(config TDBatchConfig) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDebugConsumer">func NewDebugConsumer(serverUrl string, appId string) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDebugConsumerWithDeviceId">func NewDebugConsumerWithDeviceId(serverUrl string, appId string, writeData bool, deviceId string) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDebugConsumerWithWriter">func NewDebugConsumerWithWriter(serverUrl string, appId string, writeData bool) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewLogConsumer">func NewLogConsumer(directory string, r RotateMode) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewLogConsumerWithConfig">func NewLogConsumerWithConfig(config TDLogConsumerConfig) (TDConsumer, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewLogConsumerWithFileSize">func NewLogConsumerWithFileSize(directory string, r RotateMode, size int) (TDConsumer, error)</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TDDebugConsumer">type TDDebugConsumer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDDebugConsumer.Add">func (c *TDDebugConsumer) Add(d Data) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDDebugConsumer.Close">func (c *TDDebugConsumer) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDDebugConsumer.Flush">func (c *TDDebugConsumer) Flush() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDDebugConsumer.IsStringent">func (c *TDDebugConsumer) IsStringent() bool</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TDLogConsumer">type TDLogConsumer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDLogConsumer.Add">func (c *TDLogConsumer) Add(d Data) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDLogConsumer.Close">func (c *TDLogConsumer) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDLogConsumer.Flush">func (c *TDLogConsumer) Flush() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TDLogConsumer.IsStringent">func (c *TDLogConsumer) IsStringent() bool</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TDLogConsumerConfig">type TDLogConsumerConfig</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TDLogLevel">type TDLogLevel</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TDLogger">type TDLogger</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go">consumer_batch.go</a>
+			
+				<a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go">consumer_debug.go</a>
+			
+				<a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go">consumer_log.go</a>
+			
+				<a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go">td_log.go</a>
+			
+				<a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go">thinkingdata.go</a>
+			
+				<a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/utils.go">utils.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span id="DefaultTimeOut">DefaultTimeOut</span>       = 30000
+    <span id="DefaultBatchSize">DefaultBatchSize</span>     = 20
+    <span id="MaxBatchSize">MaxBatchSize</span>         = 200
+    <span id="DefaultInterval">DefaultInterval</span>      = 30
+    <span id="DefaultCacheCapacity">DefaultCacheCapacity</span> = 50
+)</pre>
+			
+				
+				<pre>const (
+    <span id="Track">Track</span>          = &#34;track&#34;
+    <span id="TrackUpdate">TrackUpdate</span>    = &#34;track_update&#34;
+    <span id="TrackOverwrite">TrackOverwrite</span> = &#34;track_overwrite&#34;
+    <span id="UserSet">UserSet</span>        = &#34;user_set&#34;
+    <span id="UserUnset">UserUnset</span>      = &#34;user_unset&#34;
+    <span id="UserSetOnce">UserSetOnce</span>    = &#34;user_setOnce&#34;
+    <span id="UserAdd">UserAdd</span>        = &#34;user_add&#34;
+    <span id="UserAppend">UserAppend</span>     = &#34;user_append&#34;
+    <span id="UserUniqAppend">UserUniqAppend</span> = &#34;user_uniq_append&#34;
+    <span id="UserDel">UserDel</span>        = &#34;user_del&#34;
+
+    <span id="SdkVersion">SdkVersion</span> = &#34;2.0.0&#34;
+    <span id="LibName">LibName</span>    = &#34;Golang&#34;
+)</pre>
+			
+				
+				<pre>const (
+    <span id="DATE_FORMAT">DATE_FORMAT</span> = &#34;2006-01-02 15:04:05.000&#34;
+    <span id="KEY_PATTERN">KEY_PATTERN</span> = &#34;^[a-zA-Z#][A-Za-z0-9_]{0,49}$&#34;
+)</pre>
+			
+				<p>
+SDK_LOG_PREFIX const
+</p>
+
+				<pre>const <span id="SDK_LOG_PREFIX">SDK_LOG_PREFIX</span> = &#34;[ThinkingData]&#34;</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="SetCustomLogger">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=843:880#L32">SetCustomLogger</a>
+				<a class="permalink" href="index.html#SetCustomLogger">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetCustomLogger(logger <a href="index.html#TDLogger">TDLogger</a>)</pre>
+			<p>
+SetCustomLogger Set a custom log input class, usually you don&#39;t need to set it up.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetLogLevel">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=565:599#L22">SetLogLevel</a>
+				<a class="permalink" href="index.html#SetLogLevel">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetLogLevel(level <a href="index.html#TDLogLevel">TDLogLevel</a>)</pre>
+			<p>
+SetLogLevel Set the log output level
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetLoggerConfig">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=2776:2817#L105">SetLoggerConfig</a>
+				<a class="permalink" href="index.html#SetLoggerConfig">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetLoggerConfig(config <a href="index.html#LoggerConfig">LoggerConfig</a>)</pre>
+			<p>
+Deprecated: please use thinkingdata.SetLogLevel(thinkingdata.TDLogLevelOff)
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Consumer">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=9084:9123#L271">Consumer</a>
+				<a class="permalink" href="index.html#Consumer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Deprecated: please use TDConsumer
+</p>
+
+			<pre>type Consumer interface {
+    <a href="index.html#TDConsumer">TDConsumer</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Data">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=424:1214#L14">Data</a>
+				<a class="permalink" href="index.html#Data">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Data struct {
+<span id="Data.IsComplex"></span>    IsComplex    <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a>                   `json:&#34;-&#34;` <span class="comment">// properties are nested or not</span>
+<span id="Data.AccountId"></span>    AccountId    <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#account_id,omitempty&#34;`
+<span id="Data.DistinctId"></span>    DistinctId   <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#distinct_id,omitempty&#34;`
+<span id="Data.Type"></span>    Type         <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#type&#34;`
+<span id="Data.Time"></span>    Time         <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#time&#34;`
+<span id="Data.EventName"></span>    EventName    <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#event_name,omitempty&#34;`
+<span id="Data.EventId"></span>    EventId      <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#event_id,omitempty&#34;`
+<span id="Data.FirstCheckId"></span>    FirstCheckId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#first_check_id,omitempty&#34;`
+<span id="Data.Ip"></span>    Ip           <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#ip,omitempty&#34;`
+<span id="Data.UUID"></span>    UUID         <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#uuid,omitempty&#34;`
+<span id="Data.AppId"></span>    AppId        <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>                 `json:&#34;#app_id,omitempty&#34;`
+<span id="Data.Properties"></span>    Properties   map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{} `json:&#34;properties&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LogConfig">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=6088:6136#L243">LogConfig</a>
+				<a class="permalink" href="index.html#LogConfig">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Deprecated: please use TDConsumer
+</p>
+
+			<pre>type LogConfig struct {
+    <a href="index.html#TDLogConsumerConfig">TDLogConsumerConfig</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LogConsumer">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=6002:6046#L238">LogConsumer</a>
+				<a class="permalink" href="index.html#LogConsumer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Deprecated: please use TDConsumer
+</p>
+
+			<pre>type LogConsumer struct {
+    <a href="index.html#TDLogConsumer">TDLogConsumer</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LogType">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=2057:2075#L88">LogType</a>
+				<a class="permalink" href="index.html#LogType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Deprecated: please use thinkingdata.SetLogLevel(thinkingdata.TDLogLevelOff)
+</p>
+
+			<pre>type LogType <a href="http://10.208.100.133:6060/pkg/builtin/#int32">int32</a></pre>
+
+			
+				<p>
+Deprecated: please use thinkingdata.SetLogLevel(thinkingdata.TDLogLevelOff)
+</p>
+
+				<pre>const (
+    <span id="LoggerTypeOff">LoggerTypeOff</span>               <a href="index.html#LogType">LogType</a> = 1 &lt;&lt; 0                                <span class="comment">// disable log</span>
+    <span id="LoggerTypePrint">LoggerTypePrint</span>             <a href="index.html#LogType">LogType</a> = 1 &lt;&lt; 1                                <span class="comment">// print on console</span>
+    <span id="LoggerTypeWriteFile">LoggerTypeWriteFile</span>         <a href="index.html#LogType">LogType</a> = 1 &lt;&lt; 2                                <span class="comment">// print to file</span>
+    <span id="LoggerTypePrintAndWriteFile">LoggerTypePrintAndWriteFile</span>         = <a href="index.html#LoggerTypePrint">LoggerTypePrint</a> | <a href="index.html#LoggerTypeWriteFile">LoggerTypeWriteFile</a> <span class="comment">// print both on console and file</span>
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LoggerConfig">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=2640:2695#L99">LoggerConfig</a>
+				<a class="permalink" href="index.html#LoggerConfig">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Deprecated: please use thinkingdata.SetLogLevel(thinkingdata.TDLogLevelOff)
+</p>
+
+			<pre>type LoggerConfig struct {
+<span id="LoggerConfig.Type"></span>    Type <a href="index.html#LogType">LogType</a>
+<span id="LoggerConfig.Path"></span>    Path <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RotateMode">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=101:122#L2">RotateMode</a>
+				<a class="permalink" href="index.html#RotateMode">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RotateMode <a href="http://10.208.100.133:6060/pkg/builtin/#int32">int32</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="DefaultChannelSize">DefaultChannelSize</span>            = 1000 <span class="comment">// channel size</span>
+    <span id="ROTATE_DAILY">ROTATE_DAILY</span>       <a href="index.html#RotateMode">RotateMode</a> = 0    <span class="comment">// by the day</span>
+    <span id="ROTATE_HOURLY">ROTATE_HOURLY</span>      <a href="index.html#RotateMode">RotateMode</a> = 1    <span class="comment">// by the hour</span>
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TDAnalytics">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=1379:1580#L37">TDAnalytics</a>
+				<a class="permalink" href="index.html#TDAnalytics">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type TDAnalytics struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="New">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=1598:1632#L45">New</a>
+					<a class="permalink" href="index.html#New">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func New(c <a href="index.html#TDConsumer">TDConsumer</a>) <a href="index.html#TDAnalytics">TDAnalytics</a></pre>
+				<p>
+New init SDK
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="TDAnalytics.ClearSuperProperties">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=2325:2370#L71">ClearSuperProperties</a>
+					<a class="permalink" href="index.html#TDAnalytics.ClearSuperProperties">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) ClearSuperProperties()</pre>
+				<p>
+ClearSuperProperties clear common properties
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.Close">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=7555:7591#L215">Close</a>
+					<a class="permalink" href="index.html#TDAnalytics.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) Close() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close and exit sdk
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.Flush">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=7463:7499#L210">Flush</a>
+					<a class="permalink" href="index.html#TDAnalytics.Flush">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) Flush() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Flush report data immediately.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.GetDynamicSuperProperties">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=2816:2889#L86">GetDynamicSuperProperties</a>
+					<a class="permalink" href="index.html#TDAnalytics.GetDynamicSuperProperties">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) GetDynamicSuperProperties() map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+				<p>
+GetDynamicSuperProperties dynamic common properties
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.GetSuperProperties">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=1846:1912#L55">GetSuperProperties</a>
+					<a class="permalink" href="index.html#TDAnalytics.GetSuperProperties">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) GetSuperProperties() map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+				<p>
+GetSuperProperties get common properties
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.SetDynamicSuperProperties">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=2597:2683#L79">SetDynamicSuperProperties</a>
+					<a class="permalink" href="index.html#TDAnalytics.SetDynamicSuperProperties">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) SetDynamicSuperProperties(action func() map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{})</pre>
+				<p>
+SetDynamicSuperProperties set common properties dynamically.
+not recommend to add the operation which with a lot of computation
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.SetSuperProperties">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=2100:2181#L64">SetSuperProperties</a>
+					<a class="permalink" href="index.html#TDAnalytics.SetSuperProperties">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) SetSuperProperties(superProperties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{})</pre>
+				<p>
+SetSuperProperties set common properties
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.Track">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=3116:3226#L97">Track</a>
+					<a class="permalink" href="index.html#TDAnalytics.Track">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) Track(accountId, distinctId, eventName <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Track report ordinary event
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.TrackFirst">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=3422:3551#L102">TrackFirst</a>
+					<a class="permalink" href="index.html#TDAnalytics.TrackFirst">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) TrackFirst(accountId, distinctId, eventName, firstCheckId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+TrackFirst report first event. (must add &#34;#first_check_id&#34; in properties, because it is flag of the first event)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.TrackOverwrite">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=4095:4223#L118">TrackOverwrite</a>
+					<a class="permalink" href="index.html#TDAnalytics.TrackOverwrite">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) TrackOverwrite(accountId, distinctId, eventName, eventId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+TrackOverwrite report overridable event
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.TrackUpdate">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=3836:3961#L113">TrackUpdate</a>
+					<a class="permalink" href="index.html#TDAnalytics.TrackUpdate">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) TrackUpdate(accountId, distinctId, eventName, eventId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+TrackUpdate report updatable event
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserAdd">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=6137:6245#L177">UserAdd</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserAdd">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserAdd(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserAdd to accumulate operations against the property.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserAppend">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=6363:6474#L182">UserAppend</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserAppend">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserAppend(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserAppend to add user properties of array type.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserDelete">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=6859:6935#L192">UserDelete</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserDelete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserDelete(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserDelete delete a user, This operation cannot be undone.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserSet">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=5218:5326#L153">UserSet</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserSet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserSet(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserSet set user properties. would overwrite existing names.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserSetOnce">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=5897:6009#L172">UserSetOnce</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserSetOnce">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserSetOnce(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserSetOnce set user properties, If such property had been set before, this message would be neglected.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserUniqAppend">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=6609:6724#L187">UserUniqAppend</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserUniqAppend">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserUniqAppend(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, properties map[<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>]interface{}) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserUniqAppend append user properties to array type by unique.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TDAnalytics.UserUnset">func (*TDAnalytics) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=5441:5528#L158">UserUnset</a>
+					<a class="permalink" href="index.html#TDAnalytics.UserUnset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ta *<a href="index.html#TDAnalytics">TDAnalytics</a>) UserUnset(accountId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, distinctId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, s []<a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UserUnset clear the user properties of users.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TDBatchConfig">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=651:1036#L23">TDBatchConfig</a>
+				<a class="permalink" href="index.html#TDBatchConfig">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type TDBatchConfig struct {
+<span id="TDBatchConfig.ServerUrl"></span>    ServerUrl     <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a> <span class="comment">// serverUrl</span>
+<span id="TDBatchConfig.AppId"></span>    AppId         <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a> <span class="comment">// appId</span>
+<span id="TDBatchConfig.BatchSize"></span>    BatchSize     <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>    <span class="comment">// flush event count each time</span>
+<span id="TDBatchConfig.Timeout"></span>    Timeout       <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>    <span class="comment">// http timeout (mill second)</span>
+<span id="TDBatchConfig.Compress"></span>    Compress      <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a>   <span class="comment">// enable compress data</span>
+<span id="TDBatchConfig.AutoFlush"></span>    AutoFlush     <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a>   <span class="comment">// enable auto flush</span>
+<span id="TDBatchConfig.Interval"></span>    Interval      <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>    <span class="comment">// auto flush spacing (second)</span>
+<span id="TDBatchConfig.CacheCapacity"></span>    CacheCapacity <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>    <span class="comment">// cache event count</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TDBatchConsumer">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=213:649#L9">TDBatchConsumer</a>
+				<a class="permalink" href="index.html#TDBatchConsumer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TDBatchConsumer upload data to TE by http
+</p>
+
+			<pre>type TDBatchConsumer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TDBatchConsumer.Add">func (*TDBatchConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=3838:3881#L153">Add</a>
+					<a class="permalink" href="index.html#TDBatchConsumer.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDBatchConsumer">TDBatchConsumer</a>) Add(d <a href="index.html#Data">Data</a>) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDBatchConsumer.Close">func (*TDBatchConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=5973:6012#L259">Close</a>
+					<a class="permalink" href="index.html#TDBatchConsumer.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDBatchConsumer">TDBatchConsumer</a>) Close() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDBatchConsumer.Flush">func (*TDBatchConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=4226:4265#L173">Flush</a>
+					<a class="permalink" href="index.html#TDBatchConsumer.Flush">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDBatchConsumer">TDBatchConsumer</a>) Flush() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDBatchConsumer.FlushAll">func (*TDBatchConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=5733:5775#L248">FlushAll</a>
+					<a class="permalink" href="index.html#TDBatchConsumer.FlushAll">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDBatchConsumer">TDBatchConsumer</a>) FlushAll() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDBatchConsumer.IsStringent">func (*TDBatchConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=6074:6118#L264">IsStringent</a>
+					<a class="permalink" href="index.html#TDBatchConsumer.IsStringent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDBatchConsumer">TDBatchConsumer</a>) IsStringent() <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TDConsumer">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/thinkingdata.go?s=1257:1377#L30">TDConsumer</a>
+				<a class="permalink" href="index.html#TDConsumer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TDConsumer define operation interface
+</p>
+
+			<pre>type TDConsumer interface {
+    Add(d <a href="index.html#Data">Data</a>) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>
+    Flush() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>
+    Close() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>
+    IsStringent() <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a> <span class="comment">// check data or not.</span>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewBatchConsumer">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=1231:1304#L43">NewBatchConsumer</a>
+					<a class="permalink" href="index.html#NewBatchConsumer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewBatchConsumer(serverUrl <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, appId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewBatchConsumer create TDBatchConsumer
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewBatchConsumerWithBatchSize">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=1556:1657#L56">NewBatchConsumerWithBatchSize</a>
+					<a class="permalink" href="index.html#NewBatchConsumerWithBatchSize">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewBatchConsumerWithBatchSize(serverUrl <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, appId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, batchSize <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewBatchConsumerWithBatchSize create TDBatchConsumer
+serverUrl
+appId
+batchSize: flush event count each time
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewBatchConsumerWithCompress">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=1924:2024#L70">NewBatchConsumerWithCompress</a>
+					<a class="permalink" href="index.html#NewBatchConsumerWithCompress">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewBatchConsumerWithCompress(serverUrl <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, appId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, compress <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewBatchConsumerWithCompress create TDBatchConsumer
+serverUrl
+appId
+compress: enable data compress
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewBatchConsumerWithConfig">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_batch.go?s=2160:2233#L79">NewBatchConsumerWithConfig</a>
+					<a class="permalink" href="index.html#NewBatchConsumerWithConfig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewBatchConsumerWithConfig(config <a href="index.html#TDBatchConfig">TDBatchConfig</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="NewDebugConsumer">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=436:509#L11">NewDebugConsumer</a>
+					<a class="permalink" href="index.html#NewDebugConsumer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDebugConsumer(serverUrl <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, appId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewDebugConsumer init TDDebugConsumer
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewDebugConsumerWithDeviceId">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=749:867#L19">NewDebugConsumerWithDeviceId</a>
+					<a class="permalink" href="index.html#NewDebugConsumerWithDeviceId">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDebugConsumerWithDeviceId(serverUrl <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, appId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, writeData <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a>, deviceId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="NewDebugConsumerWithWriter">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=574:673#L15">NewDebugConsumerWithWriter</a>
+					<a class="permalink" href="index.html#NewDebugConsumerWithWriter">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDebugConsumerWithWriter(serverUrl <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, appId <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, writeData <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="NewLogConsumer">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=1062:1133#L31">NewLogConsumer</a>
+					<a class="permalink" href="index.html#NewLogConsumer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewLogConsumer(directory <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, r <a href="index.html#RotateMode">RotateMode</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="NewLogConsumerWithConfig">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=1624:1701#L48">NewLogConsumerWithConfig</a>
+					<a class="permalink" href="index.html#NewLogConsumerWithConfig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewLogConsumerWithConfig(config <a href="index.html#TDLogConsumerConfig">TDLogConsumerConfig</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="NewLogConsumerWithFileSize">func <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=1378:1471#L39">NewLogConsumerWithFileSize</a>
+					<a class="permalink" href="index.html#NewLogConsumerWithFileSize">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewLogConsumerWithFileSize(directory <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>, r <a href="index.html#RotateMode">RotateMode</a>, size <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>) (<a href="index.html#TDConsumer">TDConsumer</a>, <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewLogConsumerWithFileSize init TDLogConsumer
+directory: directory of log file
+r: rotate mode of log file. (in days / hours)
+size: max size of single log file (MByte)
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="TDDebugConsumer">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=222:393#L3">TDDebugConsumer</a>
+				<a class="permalink" href="index.html#TDDebugConsumer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TDDebugConsumer The data is reported one by one, and when an error occurs, the log will be printed on the console.
+</p>
+
+			<pre>type TDDebugConsumer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TDDebugConsumer.Add">func (*TDDebugConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=1349:1392#L43">Add</a>
+					<a class="permalink" href="index.html#TDDebugConsumer.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDDebugConsumer">TDDebugConsumer</a>) Add(d <a href="index.html#Data">Data</a>) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDDebugConsumer.Close">func (*TDDebugConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=1804:1843#L67">Close</a>
+					<a class="permalink" href="index.html#TDDebugConsumer.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDDebugConsumer">TDDebugConsumer</a>) Close() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDDebugConsumer.Flush">func (*TDDebugConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=1722:1761#L62">Flush</a>
+					<a class="permalink" href="index.html#TDDebugConsumer.Flush">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDDebugConsumer">TDDebugConsumer</a>) Flush() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDDebugConsumer.IsStringent">func (*TDDebugConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_debug.go?s=1896:1940#L72">IsStringent</a>
+					<a class="permalink" href="index.html#TDDebugConsumer.IsStringent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDDebugConsumer">TDDebugConsumer</a>) IsStringent() <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TDLogConsumer">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=361:772#L11">TDLogConsumer</a>
+				<a class="permalink" href="index.html#TDLogConsumer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TDLogConsumer write data to file, it works with LogBus
+</p>
+
+			<pre>type TDLogConsumer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TDLogConsumer.Add">func (*TDLogConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=2410:2451#L80">Add</a>
+					<a class="permalink" href="index.html#TDLogConsumer.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDLogConsumer">TDLogConsumer</a>) Add(d <a href="index.html#Data">Data</a>) <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDLogConsumer.Close">func (*TDLogConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=2980:3017#L110">Close</a>
+					<a class="permalink" href="index.html#TDLogConsumer.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDLogConsumer">TDLogConsumer</a>) Close() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDLogConsumer.Flush">func (*TDLogConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=2775:2812#L99">Flush</a>
+					<a class="permalink" href="index.html#TDLogConsumer.Flush">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDLogConsumer">TDLogConsumer</a>) Flush() <a href="http://10.208.100.133:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="TDLogConsumer.IsStringent">func (*TDLogConsumer) <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=3401:3443#L131">IsStringent</a>
+					<a class="permalink" href="index.html#TDLogConsumer.IsStringent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#TDLogConsumer">TDLogConsumer</a>) IsStringent() <a href="http://10.208.100.133:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TDLogConsumerConfig">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/consumer_log.go?s=776:1058#L23">TDLogConsumerConfig</a>
+				<a class="permalink" href="index.html#TDLogConsumerConfig">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type TDLogConsumerConfig struct {
+<span id="TDLogConsumerConfig.Directory"></span>    Directory      <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>     <span class="comment">// directory of log file</span>
+<span id="TDLogConsumerConfig.RotateMode"></span>    RotateMode     <a href="index.html#RotateMode">RotateMode</a> <span class="comment">// rotate mode of log file</span>
+<span id="TDLogConsumerConfig.FileSize"></span>    FileSize       <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>        <span class="comment">// max size of single log file (MByte)</span>
+<span id="TDLogConsumerConfig.FileNamePrefix"></span>    FileNamePrefix <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>     <span class="comment">// prefix of log file</span>
+<span id="TDLogConsumerConfig.ChannelSize"></span>    ChannelSize    <a href="http://10.208.100.133:6060/pkg/builtin/#int">int</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TDLogLevel">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=140:161#L3">TDLogLevel</a>
+				<a class="permalink" href="index.html#TDLogLevel">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type TDLogLevel <a href="http://10.208.100.133:6060/pkg/builtin/#int32">int32</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="TDLogLevelOff">TDLogLevelOff</span>     <a href="index.html#TDLogLevel">TDLogLevel</a> = 1
+    <span id="TDLogLevelError">TDLogLevelError</span>   <a href="index.html#TDLogLevel">TDLogLevel</a> = 2
+    <span id="TDLogLevelWarning">TDLogLevelWarning</span> <a href="index.html#TDLogLevel">TDLogLevel</a> = 3
+    <span id="TDLogLevelInfo">TDLogLevelInfo</span>    <a href="index.html#TDLogLevel">TDLogLevel</a> = 4
+    <span id="TDLogLevelDebug">TDLogLevelDebug</span>   <a href="index.html#TDLogLevel">TDLogLevel</a> = 5
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TDLogger">type <a href="http://10.208.100.133:6060/src/github.com/ThinkingDataAnalytics/go-sdk/src/thinkingdata/td_log.go?s=473:523#L17">TDLogger</a>
+				<a class="permalink" href="index.html#TDLogger">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TDLogger User-defined log classes must comply with interface
+</p>
+
+			<pre>type TDLogger interface {
+    Print(message <a href="http://10.208.100.133:6060/pkg/builtin/#string">string</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.16.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://10.208.100.133:6060/LICENSE">BSD license</a>.<br>
+<a href="https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

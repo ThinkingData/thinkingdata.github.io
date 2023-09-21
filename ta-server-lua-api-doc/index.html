@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>thinkingdatasdk</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>thinkingdatasdk</code></h1>
+<p></p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.enableLog">TDAnalytics.enableLog (enable)</a></td>
+	<td class="summary">Enable log or not</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:setDynamicSuperProperties">TDAnalytics:setDynamicSuperProperties (callback)</a></td>
+	<td class="summary">Set dynamic common properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:setSuperProperties">TDAnalytics:setSuperProperties (params)</a></td>
+	<td class="summary">Set common properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:setSuperProperty">TDAnalytics:setSuperProperty (key, value)</a></td>
+	<td class="summary">Set common property</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:removeSuperProperty">TDAnalytics:removeSuperProperty (key)</a></td>
+	<td class="summary">Remove common properties with key</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:getSuperProperty">TDAnalytics:getSuperProperty (key)</a></td>
+	<td class="summary">Find common properties with key</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:getSuperProperties">TDAnalytics:getSuperProperties ()</a></td>
+	<td class="summary">Get all properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:clearSuperProperties">TDAnalytics:clearSuperProperties ()</a></td>
+	<td class="summary">Clear common properties</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userSet">TDAnalytics:userSet (accountId, distinctId, properties)</a></td>
+	<td class="summary">Set user properties.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userSetOnce">TDAnalytics:userSetOnce (accountId, distinctId, properties)</a></td>
+	<td class="summary">Set user properties, if such property had been set before, this message would be neglected.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userAdd">TDAnalytics:userAdd (accountId, distinctId, properties)</a></td>
+	<td class="summary">To accumulate operations against the property</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userAppend">TDAnalytics:userAppend (accountId, distinctId, properties)</a></td>
+	<td class="summary">To add user properties of array type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userUniqueAppend">TDAnalytics:userUniqueAppend (accountId, distinctId, properties)</a></td>
+	<td class="summary">Append user properties to array type by unique.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userUnset">TDAnalytics:userUnset (accountId, distinctId, properties)</a></td>
+	<td class="summary">Clear the user properties of users</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:userDel">TDAnalytics:userDel (accountId, distinctId)</a></td>
+	<td class="summary">Delete a user, This operation cannot be undone</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:track">TDAnalytics:track (accountId, distinctId, eventName, properties)</a></td>
+	<td class="summary">Report ordinary event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:trackFirst">TDAnalytics:trackFirst (accountId, distinctId, eventName, firstCheckId, properties)</a></td>
+	<td class="summary">Report first event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:trackUpdate">TDAnalytics:trackUpdate (accountId, distinctId, eventName, eventId, properties)</a></td>
+	<td class="summary">Updatable event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:trackOverwrite">TDAnalytics:trackOverwrite (accountId, distinctId, eventName, eventId, properties)</a></td>
+	<td class="summary">Report overridable event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:flush">TDAnalytics:flush ()</a></td>
+	<td class="summary">Flush data</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics:close">TDAnalytics:close ()</a></td>
+	<td class="summary">Close SDK</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Util.getFileHandlerAndCount">Util.getFileHandlerAndCount (currentFile, fileName, fileSize, count)</a></td>
+	<td class="summary">func desc</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.LOG_RULE">TDAnalytics.LOG_RULE</a></td>
+	<td class="summary">Log file rotate type</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics">TDAnalytics</a></td>
+	<td class="summary">Init analytics instance</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.TDDebugConsumer">TDAnalytics.TDDebugConsumer</a></td>
+	<td class="summary">Construct debug consumer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.TDBatchConsumer">TDAnalytics.TDBatchConsumer</a></td>
+	<td class="summary">Construct batch consumer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.TDLogConsumer">TDAnalytics.TDLogConsumer</a></td>
+	<td class="summary">Construct logConsumer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.LOG_RULE.HOUR">TDAnalytics.LOG_RULE.HOUR</a></td>
+	<td class="summary">Log file rotate type: By hour</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TDAnalytics.LOG_RULE.DAY">TDAnalytics.LOG_RULE.DAY</a></td>
+	<td class="summary">Log file rotate type: By Day</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "TDAnalytics.enableLog"></a>
+    <strong>TDAnalytics.enableLog (enable)</strong>
+    </dt>
+    <dd>
+    Enable log or not
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enable</span>
+         boolean
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:setDynamicSuperProperties"></a>
+    <strong>TDAnalytics:setDynamicSuperProperties (callback)</strong>
+    </dt>
+    <dd>
+    Set dynamic common properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">callback</span>
+         function
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:setSuperProperties"></a>
+    <strong>TDAnalytics:setSuperProperties (params)</strong>
+    </dt>
+    <dd>
+    Set common properties
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">params</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:setSuperProperty"></a>
+    <strong>TDAnalytics:setSuperProperty (key, value)</strong>
+    </dt>
+    <dd>
+    Set common property
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         string
+        </li>
+        <li><span class="parameter">value</span>
+         any
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:removeSuperProperty"></a>
+    <strong>TDAnalytics:removeSuperProperty (key)</strong>
+    </dt>
+    <dd>
+    Remove common properties with key
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         any
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:getSuperProperty"></a>
+    <strong>TDAnalytics:getSuperProperty (key)</strong>
+    </dt>
+    <dd>
+    Find common properties with key
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         string
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:getSuperProperties"></a>
+    <strong>TDAnalytics:getSuperProperties ()</strong>
+    </dt>
+    <dd>
+    Get all properties
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:clearSuperProperties"></a>
+    <strong>TDAnalytics:clearSuperProperties ()</strong>
+    </dt>
+    <dd>
+    Clear common properties
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userSet"></a>
+    <strong>TDAnalytics:userSet (accountId, distinctId, properties)</strong>
+    </dt>
+    <dd>
+    Set user properties.  Would overwrite existing names
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userSetOnce"></a>
+    <strong>TDAnalytics:userSetOnce (accountId, distinctId, properties)</strong>
+    </dt>
+    <dd>
+    Set user properties, if such property had been set before, this message would be neglected.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userAdd"></a>
+    <strong>TDAnalytics:userAdd (accountId, distinctId, properties)</strong>
+    </dt>
+    <dd>
+    To accumulate operations against the property
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userAppend"></a>
+    <strong>TDAnalytics:userAppend (accountId, distinctId, properties)</strong>
+    </dt>
+    <dd>
+    To add user properties of array type
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userUniqueAppend"></a>
+    <strong>TDAnalytics:userUniqueAppend (accountId, distinctId, properties)</strong>
+    </dt>
+    <dd>
+    Append user properties to array type by unique.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userUnset"></a>
+    <strong>TDAnalytics:userUnset (accountId, distinctId, properties)</strong>
+    </dt>
+    <dd>
+    Clear the user properties of users
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:userDel"></a>
+    <strong>TDAnalytics:userDel (accountId, distinctId)</strong>
+    </dt>
+    <dd>
+    Delete a user, This operation cannot be undone
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:track"></a>
+    <strong>TDAnalytics:track (accountId, distinctId, eventName, properties)</strong>
+    </dt>
+    <dd>
+    Report ordinary event
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">eventName</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:trackFirst"></a>
+    <strong>TDAnalytics:trackFirst (accountId, distinctId, eventName, firstCheckId, properties)</strong>
+    </dt>
+    <dd>
+    Report first event.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">eventName</span>
+         string
+        </li>
+        <li><span class="parameter">firstCheckId</span>
+         string It is flag of the first event
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:trackUpdate"></a>
+    <strong>TDAnalytics:trackUpdate (accountId, distinctId, eventName, eventId, properties)</strong>
+    </dt>
+    <dd>
+    Updatable event.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">eventName</span>
+         string
+        </li>
+        <li><span class="parameter">eventId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:trackOverwrite"></a>
+    <strong>TDAnalytics:trackOverwrite (accountId, distinctId, eventName, eventId, properties)</strong>
+    </dt>
+    <dd>
+    Report overridable event.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">accountId</span>
+         string
+        </li>
+        <li><span class="parameter">distinctId</span>
+         string
+        </li>
+        <li><span class="parameter">eventName</span>
+         string
+        </li>
+        <li><span class="parameter">eventId</span>
+         string
+        </li>
+        <li><span class="parameter">properties</span>
+         table
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:flush"></a>
+    <strong>TDAnalytics:flush ()</strong>
+    </dt>
+    <dd>
+    Flush data
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics:close"></a>
+    <strong>TDAnalytics:close ()</strong>
+    </dt>
+    <dd>
+    Close SDK
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Util.getFileHandlerAndCount"></a>
+    <strong>Util.getFileHandlerAndCount (currentFile, fileName, fileSize, count)</strong>
+    </dt>
+    <dd>
+    func desc
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">currentFile</span>
+         file*
+        </li>
+        <li><span class="parameter">fileName</span>
+         string
+        </li>
+        <li><span class="parameter">fileSize</span>
+         number
+        </li>
+        <li><span class="parameter">count</span>
+         number
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        number file count</li>
+        <li>
+        file* effective handler</li>
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "TDAnalytics.LOG_RULE"></a>
+    <strong>TDAnalytics.LOG_RULE</strong>
+    </dt>
+    <dd>
+    Log file rotate type
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "TDAnalytics"></a>
+    <strong>TDAnalytics</strong>
+    </dt>
+    <dd>
+    Init analytics instance
+
+
+    <ul>
+        <li><span class="parameter">self</span>
+         any
+        </li>
+        <li><span class="parameter">consumer</span>
+         any logConsuemr/batchConsumer/debugConsumer
+        </li>
+        <li><span class="parameter">strictMode</span>
+         boolean enable properties check
+        </li>
+        <li><span class="parameter">enableLog</span>
+         boolean deprecated. please use TDAnalytics.enableLog(enable)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics.TDDebugConsumer"></a>
+    <strong>TDAnalytics.TDDebugConsumer</strong>
+    </dt>
+    <dd>
+    Construct debug consumer
+
+
+    <ul>
+        <li><span class="parameter">self</span>
+         any
+        </li>
+        <li><span class="parameter">url</span>
+         string Project url
+        </li>
+        <li><span class="parameter">appid</span>
+         string Project app id
+        </li>
+        <li><span class="parameter">debugOnly</span>
+         boolean false: write data. true: No write data
+        </li>
+        <li><span class="parameter">deviceId</span>
+         string Debug deviceId
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics.TDBatchConsumer"></a>
+    <strong>TDAnalytics.TDBatchConsumer</strong>
+    </dt>
+    <dd>
+    Construct batch consumer
+
+
+    <ul>
+        <li><span class="parameter">self</span>
+         any
+        </li>
+        <li><span class="parameter">url</span>
+         string
+        </li>
+        <li><span class="parameter">appid</span>
+         string
+        </li>
+        <li><span class="parameter">batchNum</span>
+         number
+        </li>
+        <li><span class="parameter">cacheCapacity</span>
+         number
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics.TDLogConsumer"></a>
+    <strong>TDAnalytics.TDLogConsumer</strong>
+    </dt>
+    <dd>
+    Construct logConsumer
+
+
+    <ul>
+        <li><span class="parameter">self</span>
+         any
+        </li>
+        <li><span class="parameter">logPath</span>
+         string
+        </li>
+        <li><span class="parameter">rule</span>
+         string
+        </li>
+        <li><span class="parameter">batchNum</span>
+         number
+        </li>
+        <li><span class="parameter">fileSize</span>
+         number
+        </li>
+        <li><span class="parameter">fileNamePrefix</span>
+         string
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics.LOG_RULE.HOUR"></a>
+    <strong>TDAnalytics.LOG_RULE.HOUR</strong>
+    </dt>
+    <dd>
+    Log file rotate type: By hour
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TDAnalytics.LOG_RULE.DAY"></a>
+    <strong>TDAnalytics.LOG_RULE.DAY</strong>
+    </dt>
+    <dd>
+    Log file rotate type: By Day
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/ldoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2023-09-21 14:05:46 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
