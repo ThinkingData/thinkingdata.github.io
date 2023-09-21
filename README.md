@@ -19,10 +19,13 @@
 
 ## Server SDK API Documents
 - [Java SDK](./ta-server-java-api-doc/index.html)
-- [!Golang SDK](./ta-server-api-doc/index.html)
+- [Golang SDK](./ta-server-go-api-doc\pkg\github.com\ThinkingDataAnalytics\go-sdk\src\thinkingdata/index.html)
 - [Node SDK](./ta-server-node-api-doc/index.html)
-- [!PHP SDK](./ta-server-api-doc/index.html)
-- [!C# SDK](./ta-server-api-doc/index.html)
-- [!Lua SDK](./ta-server-api-doc/index.html)
-- [!Python SDK](./ta-server-api-doc/index.html)
+- [PHP SDK](./ta-server-php-api-doc/index.html)
+- [C# SDK](./ta-server-cshap-api-doc/index.html)
+- [Lua SDK](./ta-server-lua-api-doc/index.html)
+- [Python SDK](./ta-server-python-api-doc/index.html)
 - [Erlang SDK](./ta-server-erlang-api-doc/index.html)
+- [C SDK](./ta-server-c-erlang-api-doc/index.html)
+- [C++ SDK](./ta-server-cpp-erlang-api-doc/index.html)
+- [Ruby SDK](./ta-server-ruby-erlang-api-doc/index.html)
