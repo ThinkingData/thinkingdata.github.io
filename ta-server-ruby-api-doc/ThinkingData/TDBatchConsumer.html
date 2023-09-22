@@ -21,8 +21,6 @@
 <link href="../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -59,34 +57,27 @@
 
   <div id="class-metadata">
     
-    <div id="parent-class-section" class="nav-section">
+    
+<div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link">Object
-  
 </div>
 
     
     
-    <!-- Method Quickref -->
+    
+<!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-_set_compress">#_set_compress</a>
-    
     <li ><a href="#method-i-add">#add</a>
-    
     <li ><a href="#method-i-close">#close</a>
-    
     <li ><a href="#method-i-flush">#flush</a>
-    
     <li ><a href="#method-i-set_compress">#set_compress</a>
-    
   </ul>
 </div>
 
@@ -104,62 +95,42 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="DEFAULT_LENGTH">DEFAULT_LENGTH
-        
         <dd><p>buffer count</p>
-        
-      
         <dt id="MAX_LENGTH">MAX_LENGTH
-        
         <dd>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">new</span><span
-            class="method-args">(server_url, app_id, max_buffer_length = DEFAULT_LENGTH)</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(server_url, app_id, max_buffer_length = DEFAULT_LENGTH)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
         </div>
-        
 
         <div class="method-description">
-          
           <p>Init batch consumer</p>
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/thinkingdata-ruby/td_batch_consumer.rb, line 16</span>
+            <pre><span class="ruby-comment"># File thinkingdata-ruby/td_batch_consumer.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">server_url</span>, <span class="ruby-identifier">app_id</span>, <span class="ruby-identifier">max_buffer_length</span> = <span class="ruby-constant">DEFAULT_LENGTH</span>)
   <span class="ruby-ivar">@server_uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">server_url</span>)
   <span class="ruby-ivar">@server_uri</span>.<span class="ruby-identifier">path</span> = <span class="ruby-string">&#39;/sync_server&#39;</span>
@@ -170,145 +141,104 @@
   <span class="ruby-constant">TDLog</span>.<span class="ruby-identifier">info</span>(<span class="ruby-node">&quot;TDBatchConsumer init success. ServerUrl: #{server_url}, appId: #{app_id}&quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-_set_compress" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">_set_compress</span><span
-            class="method-args">(compress)</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">_set_compress</span><span
+              class="method-args">(compress)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
         </div>
-        
 
         <div class="method-description">
-          
           <p>http request compress @param compress [Boolean] compress or not @deprecated please use: <a href="TDBatchConsumer.html#method-i-set_compress"><code>set_compress</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="_set_compress-source">
-            <pre><span class="ruby-comment"># File lib/thinkingdata-ruby/td_batch_consumer.rb, line 30</span>
+            <pre><span class="ruby-comment"># File thinkingdata-ruby/td_batch_consumer.rb, line 30</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">_set_compress</span>(<span class="ruby-identifier">compress</span>)
   <span class="ruby-ivar">@compress</span> = <span class="ruby-identifier">compress</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-add" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">add</span><span
-            class="method-args">(message)</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">add</span><span
+              class="method-args">(message)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="add-source">
-            <pre><span class="ruby-comment"># File lib/thinkingdata-ruby/td_batch_consumer.rb, line 41</span>
+            <pre><span class="ruby-comment"># File thinkingdata-ruby/td_batch_consumer.rb, line 41</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add</span>(<span class="ruby-identifier">message</span>)
   <span class="ruby-constant">TDLog</span>.<span class="ruby-identifier">info</span>(<span class="ruby-node">&quot;Enqueue data to buffer. buffer size: #{@buffers.length}, data: #{message}&quot;</span>)
   <span class="ruby-ivar">@buffers</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">message</span>
   <span class="ruby-identifier">flush</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@buffers</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@max_length</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-close" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">close</span><span
-            class="method-args">()</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">close</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="close-source">
-            <pre><span class="ruby-comment"># File lib/thinkingdata-ruby/td_batch_consumer.rb, line 47</span>
+            <pre><span class="ruby-comment"># File thinkingdata-ruby/td_batch_consumer.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">close</span>
   <span class="ruby-identifier">flush</span>
   <span class="ruby-constant">TDLog</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;TDBatchConsumer close.&quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-flush" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">flush</span><span
-            class="method-args">()</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">flush</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="flush-source">
-            <pre><span class="ruby-comment"># File lib/thinkingdata-ruby/td_batch_consumer.rb, line 52</span>
+            <pre><span class="ruby-comment"># File thinkingdata-ruby/td_batch_consumer.rb, line 52</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">flush</span>
   <span class="ruby-constant">TDLog</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;TDBatchConsumer flush data.&quot;</span>)
   <span class="ruby-keyword">begin</span>
@@ -360,58 +290,43 @@
   <span class="ruby-ivar">@buffers</span> = []
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-set_compress" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">set_compress</span><span
-            class="method-args">(compress)</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">set_compress</span><span
+              class="method-args">(compress)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
         </div>
-        
 
         <div class="method-description">
-          
           <p>http request compress @param compress [Boolean] compress or not</p>
-          
-          
 
-          
           <div class="method-source-code" id="set_compress-source">
-            <pre><span class="ruby-comment"># File lib/thinkingdata-ruby/td_batch_consumer.rb, line 37</span>
+            <pre><span class="ruby-comment"># File thinkingdata-ruby/td_batch_consumer.rb, line 37</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">set_compress</span>(<span class="ruby-identifier">compress</span>)
   <span class="ruby-ivar">@compress</span> = <span class="ruby-identifier">compress</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 
 <footer id="validator-badges" role="contentinfo">
   <p><a href="https://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.2.1.1.
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.5.0.
   <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 

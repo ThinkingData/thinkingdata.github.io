@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['c_20sdk_0',['C SDK',['../index.html',1,'']]]
+  ['c_20analytics_20sdk_0',['C Analytics SDK',['../index.html',1,'']]]
 ];
