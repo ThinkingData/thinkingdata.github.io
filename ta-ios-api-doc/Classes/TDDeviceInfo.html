@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TDDeviceInfo Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/TDDeviceInfo" class="dashAnchor"></a>
+    <a title="TDDeviceInfo Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (56% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TDDeviceInfo Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/UIView%28ThinkingAnalytics%29.html">UIView(ThinkingAnalytics)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TDAnalytics.html">TDAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDConfig.html">TDConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDDeviceInfo.html">TDDeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDEventModel.html">TDEventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDFirstEventModel.html">TDFirstEventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDOverwriteEventModel.html">TDOverwriteEventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDPresetProperties.html">TDPresetProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDSecretKey.html">TDSecretKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDSecurityPolicy.html">TDSecurityPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TDUpdateEventModel.html">TDUpdateEventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThinkingAnalyticsSDK.html">ThinkingAnalyticsSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_CLICK_EVENT">TD_APP_CLICK_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_CRASH_EVENT">TD_APP_CRASH_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_END_EVENT">TD_APP_END_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_INSTALL_EVENT">TD_APP_INSTALL_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_START_BACKGROUND_EVENT">TD_APP_START_BACKGROUND_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_START_EVENT">TD_APP_START_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TDAutoTrackConst.h@TD_APP_VIEW_EVENT">TD_APP_VIEW_EVENT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TD_EVENT_TYPE_TRACK_FIRST">TD_EVENT_TYPE_TRACK_FIRST</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TD_EVENT_TYPE_TRACK_OVERWRITE">TD_EVENT_TYPE_TRACK_OVERWRITE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TD_EVENT_TYPE_TRACK_UPDATE">TD_EVENT_TYPE_TRACK_UPDATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@VERSION">VERSION</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TAThirdPartyShareType.html">TAThirdPartyShareType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TATrackStatus.html">TATrackStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDAutoTrackEventType.html">TDAutoTrackEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDLoggingLevel.html">TDLoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDMode.html">TDMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDReportingNetworkType.html">TDReportingNetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDSSLPinningMode.html">TDSSLPinningMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDThirdPartyType.html">TDThirdPartyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TDTrackStatus.html">TDTrackStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ThinkingAnalyticsAutoTrackEventType.html">ThinkingAnalyticsAutoTrackEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ThinkingAnalyticsDebugMode.html">ThinkingAnalyticsDebugMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ThinkingAnalyticsNetworkType.html">ThinkingAnalyticsNetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ThinkingNetworkType.html">ThinkingNetworkType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TDAutoTracker.html">TDAutoTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TDScreenAutoTracker.html">TDScreenAutoTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TDUIViewAutoTrackDelegate.html">TDUIViewAutoTrackDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TDConstant.h@T@TDURLSessionDidReceiveAuthenticationChallengeBlock">TDURLSessionDidReceiveAuthenticationChallengeBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TDEventModel.h@T@kEDEventTypeName">kEDEventTypeName</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TDDeviceInfo</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">TDDeviceInfo</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="n">TDDeviceInfo</span> <span class="o">*</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span>
+
+
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">uniqueId</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceId</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">appVersion</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isFirstOpen</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">libName</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">libVersion</span><span class="p">;</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">libVersion</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="n">bundleId</span><span class="p">;</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">td_updateData</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">td_collectProperties</span><span class="p">;</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">td_getInstallTime</span><span class="p">;</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">getAutomaticData</span><span class="p">;</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">currentRadio</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TDDeviceInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(cm)sharedManager"></a>
+                    <a name="//apple_ref/objc/Method/+sharedManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(cm)sharedManager">+sharedManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">TDDeviceInfo</span> <span class="o">*</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sharedManager</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TDDeviceInfo</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(py)uniqueId"></a>
+                    <a name="//apple_ref/objc/Property/uniqueId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(py)uniqueId">uniqueId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">uniqueId</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">uniqueId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(py)deviceId"></a>
+                    <a name="//apple_ref/objc/Property/deviceId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(py)deviceId">deviceId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">deviceId</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(py)appVersion"></a>
+                    <a name="//apple_ref/objc/Property/appVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(py)appVersion">appVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">appVersion</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">appVersion</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(py)isFirstOpen"></a>
+                    <a name="//apple_ref/objc/Property/isFirstOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(py)isFirstOpen">isFirstOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isFirstOpen</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFirstOpen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(py)libName"></a>
+                    <a name="//apple_ref/objc/Property/libName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(py)libName">libName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">libName</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">libName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(py)libVersion"></a>
+                    <a name="//apple_ref/objc/Property/libVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(py)libVersion">libVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">libVersion</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">libVersion</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(cm)libVersion"></a>
+                    <a name="//apple_ref/objc/Method/+libVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(cm)libVersion">+libVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n"><a href="../Classes/TDDeviceInfo.html#/c:objc(cs)TDDeviceInfo(py)libVersion">libVersion</a></span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">libVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(cm)bundleId"></a>
+                    <a name="//apple_ref/objc/Method/+bundleId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(cm)bundleId">+bundleId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="n">bundleId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">bundleId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(im)td_updateData"></a>
+                    <a name="//apple_ref/objc/Method/-td_updateData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(im)td_updateData">-td_updateData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">td_updateData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">td_updateData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(im)td_collectProperties"></a>
+                    <a name="//apple_ref/objc/Method/-td_collectProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(im)td_collectProperties">-td_collectProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">td_collectProperties</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">td_collectProperties</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(cm)td_getInstallTime"></a>
+                    <a name="//apple_ref/objc/Method/+td_getInstallTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(cm)td_getInstallTime">+td_getInstallTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">td_getInstallTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">td_getInstallTime</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(im)getAutomaticData"></a>
+                    <a name="//apple_ref/objc/Method/-getAutomaticData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(im)getAutomaticData">-getAutomaticData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">getAutomaticData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getAutomaticData</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TDDeviceInfo(cm)currentRadio"></a>
+                    <a name="//apple_ref/objc/Method/+currentRadio" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TDDeviceInfo(cm)currentRadio">+currentRadio</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">currentRadio</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">currentRadio</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1181 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Multiple.h",
+      "line": 12,
+      "symbol": "TDAnalytics(Multiple)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Public.h",
+      "line": 12,
+      "symbol": "TDAnalytics(Public)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Public.h",
+      "line": 15,
+      "symbol": "TDAnalytics.+enableLog:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Public.h",
+      "line": 16,
+      "symbol": "TDAnalytics.+calibrateTimeWithNtp:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Public.h",
+      "line": 17,
+      "symbol": "TDAnalytics.+calibrateTime:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Public.h",
+      "line": 18,
+      "symbol": "TDAnalytics.+getLocalRegion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+Public.h",
+      "line": 19,
+      "symbol": "TDAnalytics.+setCustomerLibInfoWithLibName:libVersion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+ThirdParty.h",
+      "line": 12,
+      "symbol": "TDAnalytics(ThirdParty)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+ThirdParty.h",
+      "line": 16,
+      "symbol": "TDAnalytics.+enableThirdPartySharing:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+ThirdParty.h",
+      "line": 17,
+      "symbol": "TDAnalytics.+enableThirdPartySharing:properties:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+ThirdParty.h",
+      "line": 19,
+      "symbol": "TDAnalytics.+enableThirdPartySharing:withAppId:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+ThirdParty.h",
+      "line": 20,
+      "symbol": "TDAnalytics.+enableThirdPartySharing:properties:withAppId:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics+WebView.h",
+      "line": 12,
+      "symbol": "TDAnalytics(WebView)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAnalytics.h",
+      "line": 52,
+      "symbol": "TDAnalytics",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 13,
+      "symbol": "TDAutoTrackEventType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 13,
+      "symbol": "TDAutoTrackEventType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 14,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 15,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAppStart",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 16,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAppEnd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 17,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAppClick",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 18,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAppViewScreen",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 19,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAppViewCrash",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 20,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAppInstall",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 21,
+      "symbol": "TDAutoTrackEventType.TDAutoTrackEventTypeAll",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 24,
+      "symbol": "TD_APP_START_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 25,
+      "symbol": "TD_APP_START_BACKGROUND_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 26,
+      "symbol": "TD_APP_END_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 27,
+      "symbol": "TD_APP_VIEW_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 28,
+      "symbol": "TD_APP_CLICK_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 29,
+      "symbol": "TD_APP_CRASH_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackConst.h",
+      "line": 30,
+      "symbol": "TD_APP_INSTALL_EVENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackProtocol.h",
+      "line": 13,
+      "symbol": "TDUIViewAutoTrackDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackProtocol.h",
+      "line": 50,
+      "symbol": "TDAutoTracker",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackProtocol.h",
+      "line": 54,
+      "symbol": "TDAutoTracker.-getTrackProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDAutoTrackProtocol.h",
+      "line": 57,
+      "symbol": "TDAutoTracker.-getTrackPropertiesWithAppid",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConfig.h",
+      "line": 25,
+      "symbol": "TDConfig",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConfig.h",
+      "line": 72,
+      "symbol": "TDConfig.enableReceiptPush",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConfig.h",
+      "line": 101,
+      "symbol": "TDConfig.-setNetworkType:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConfig.h",
+      "line": 102,
+      "symbol": "TDConfig.-updateConfig:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConfig.h",
+      "line": 103,
+      "symbol": "TDConfig.-getMapInstanceToken",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConfig.h",
+      "line": 104,
+      "symbol": "TDConfig.+defaultTDConfig",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 146,
+      "symbol": "TDReportingNetworkType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 146,
+      "symbol": "TDReportingNetworkType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 147,
+      "symbol": "TDReportingNetworkType.TDReportingNetworkTypeWIFI",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 148,
+      "symbol": "TDReportingNetworkType.TDReportingNetworkTypeALL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 200,
+      "symbol": "ThinkingNetworkType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 200,
+      "symbol": "ThinkingNetworkType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 201,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkTypeNONE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 202,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkType2G",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 203,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkType3G",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 204,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkType4G",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 205,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkTypeWIFI",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 206,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkType5G",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 207,
+      "symbol": "ThinkingNetworkType.ThinkingNetworkTypeALL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 211,
+      "symbol": "TDThirdPartyType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 211,
+      "symbol": "TDThirdPartyType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 212,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 213,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeAppsFlyer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 214,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeIronSource",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 215,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeAdjust",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 216,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeBranch",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 217,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeTopOn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 218,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeTracking",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 219,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeTradPlus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 220,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeAppLovin",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 221,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeKochava",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 222,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeTalkingData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 223,
+      "symbol": "TDThirdPartyType.TDThirdPartyTypeFirebase",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 226,
+      "symbol": "TAThirdPartyShareType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 227,
+      "symbol": "TAThirdPartyShareType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 228,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeNONE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 229,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeAPPSFLYER",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 230,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeIRONSOURCE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 231,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeADJUST",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 232,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeBRANCH",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 233,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeTOPON",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 234,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeTRACKING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 235,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeTRADPLUS",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 236,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeAPPLOVIN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 237,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeKOCHAVA",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 238,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeTALKINGDATA",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 239,
+      "symbol": "TAThirdPartyShareType.TAThirdPartyShareTypeFIREBASE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 241,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeNONE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 242,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeAPPSFLYER",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 243,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeIRONSOURCE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 244,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeADJUST",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 245,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeBRANCH",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 246,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeTOPON",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 247,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeTRACKING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 248,
+      "symbol": "TAThirdPartyShareType.TDThirdPartyShareTypeTRADPLUS",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 252,
+      "symbol": "TDTrackStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 252,
+      "symbol": "TDTrackStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 265,
+      "symbol": "TATrackStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDConstant.h",
+      "line": 266,
+      "symbol": "TATrackStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 5,
+      "symbol": "VERSION",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 7,
+      "symbol": "TDDeviceInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 9,
+      "symbol": "TDDeviceInfo.+sharedManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 12,
+      "symbol": "TDDeviceInfo.uniqueId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 13,
+      "symbol": "TDDeviceInfo.deviceId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 14,
+      "symbol": "TDDeviceInfo.appVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 15,
+      "symbol": "TDDeviceInfo.isFirstOpen",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 16,
+      "symbol": "TDDeviceInfo.libName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 17,
+      "symbol": "TDDeviceInfo.libVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 19,
+      "symbol": "TDDeviceInfo.+libVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 20,
+      "symbol": "TDDeviceInfo.+bundleId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 22,
+      "symbol": "TDDeviceInfo.-td_updateData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 23,
+      "symbol": "TDDeviceInfo.-td_collectProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 25,
+      "symbol": "TDDeviceInfo.+td_getInstallTime",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 27,
+      "symbol": "TDDeviceInfo.-getAutomaticData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDDeviceInfo.h",
+      "line": 29,
+      "symbol": "TDDeviceInfo.+currentRadio",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 5,
+      "symbol": "kEDEventTypeName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 7,
+      "symbol": "TD_EVENT_TYPE_TRACK_FIRST",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 8,
+      "symbol": "TD_EVENT_TYPE_TRACK_UPDATE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 9,
+      "symbol": "TD_EVENT_TYPE_TRACK_OVERWRITE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 11,
+      "symbol": "TDEventModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 13,
+      "symbol": "TDEventModel.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 14,
+      "symbol": "TDEventModel.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 16,
+      "symbol": "TDEventModel.eventName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 17,
+      "symbol": "TDEventModel.eventType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 18,
+      "symbol": "TDEventModel.properties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDEventModel.h",
+      "line": 20,
+      "symbol": "TDEventModel.-configTime:timeZone:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDFirstEventModel.h",
+      "line": 11,
+      "symbol": "TDFirstEventModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDFirstEventModel.h",
+      "line": 13,
+      "symbol": "TDFirstEventModel.-initWithEventName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDFirstEventModel.h",
+      "line": 15,
+      "symbol": "TDFirstEventModel.-initWithEventName:firstCheckID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDOverwriteEventModel.h",
+      "line": 16,
+      "symbol": "TDOverwriteEventModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDOverwriteEventModel.h",
+      "line": 18,
+      "symbol": "TDOverwriteEventModel.-initWithEventName:eventID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 13,
+      "symbol": "TDPresetProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 15,
+      "symbol": "TDPresetProperties.bundle_id",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 16,
+      "symbol": "TDPresetProperties.carrier",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 17,
+      "symbol": "TDPresetProperties.device_id",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 18,
+      "symbol": "TDPresetProperties.device_model",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 19,
+      "symbol": "TDPresetProperties.manufacturer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 20,
+      "symbol": "TDPresetProperties.network_type",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 21,
+      "symbol": "TDPresetProperties.os",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 22,
+      "symbol": "TDPresetProperties.os_version",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 23,
+      "symbol": "TDPresetProperties.screen_height",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 24,
+      "symbol": "TDPresetProperties.screen_width",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 25,
+      "symbol": "TDPresetProperties.system_language",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 26,
+      "symbol": "TDPresetProperties.zone_offset",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDPresetProperties.h",
+      "line": 27,
+      "symbol": "TDPresetProperties.install_time",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecretKey.h",
+      "line": 12,
+      "symbol": "TDSecretKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecretKey.h",
+      "line": 27,
+      "symbol": "TDSecretKey.version",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecretKey.h",
+      "line": 28,
+      "symbol": "TDSecretKey.publicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecretKey.h",
+      "line": 29,
+      "symbol": "TDSecretKey.symmetricEncryption",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecretKey.h",
+      "line": 30,
+      "symbol": "TDSecretKey.asymmetricEncryption",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 16,
+      "symbol": "TDSecurityPolicy",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 18,
+      "symbol": "TDSecurityPolicy.allowInvalidCertificates",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 19,
+      "symbol": "TDSecurityPolicy.validatesDomainName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 20,
+      "symbol": "TDSecurityPolicy.sessionDidReceiveAuthenticationChallenge",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 21,
+      "symbol": "TDSecurityPolicy.+policyWithPinningMode:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 22,
+      "symbol": "TDSecurityPolicy.+defaultPolicy",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDSecurityPolicy.h",
+      "line": 23,
+      "symbol": "TDSecurityPolicy.-evaluateServerTrust:forDomain:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDUpdateEventModel.h",
+      "line": 16,
+      "symbol": "TDUpdateEventModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/TDUpdateEventModel.h",
+      "line": 18,
+      "symbol": "TDUpdateEventModel.-initWithEventName:eventID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 12,
+      "symbol": "ThinkingAnalyticsSDK(OldPublic)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 16,
+      "symbol": "ThinkingAnalyticsSDK.+calibrateTimeWithNtp:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 17,
+      "symbol": "ThinkingAnalyticsSDK.+calibrateTime:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 18,
+      "symbol": "ThinkingAnalyticsSDK.+getLocalRegion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 24,
+      "symbol": "ThinkingAnalyticsSDK.+setCustomerLibInfoWithLibName:libVersion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 425,
+      "symbol": "ThinkingAnalyticsSDK.-enableTracking:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 426,
+      "symbol": "ThinkingAnalyticsSDK.-optOutTracking",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 427,
+      "symbol": "ThinkingAnalyticsSDK.-optOutTrackingAndDeleteUser",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 428,
+      "symbol": "ThinkingAnalyticsSDK.-optInTracking",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 435,
+      "symbol": "ThinkingAnalyticsSDK.-getTimeString:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 438,
+      "symbol": "ThinkingAnalyticsSDK.-enableThirdPartySharing:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK+OldPublic.h",
+      "line": 439,
+      "symbol": "ThinkingAnalyticsSDK.-enableThirdPartySharing:customMap:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/ThinkingAnalyticsSDK.h",
+      "line": 45,
+      "symbol": "ThinkingAnalyticsSDK",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7/ThinkingSDK.framework/Headers/UIView+ThinkingAnalytics.h",
+      "line": 12,
+      "symbol": "UIView(ThinkingAnalytics)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/yxiong/Downloads/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK_v3.0.0-beta.1/ThinkingSDK.xcframework/ios-arm64_armv7"
+}
