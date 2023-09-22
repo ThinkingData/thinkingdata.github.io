@@ -13,6 +13,7 @@
 - [C# SDK](./ta-csharp-api-doc/index.html)
 - [C++ SDK](./ta-cpp-api-doc/index.html)
 - [Android SDK](./ta-android-api-doc/index.html)
+- [iOS SDK](./ta-ios-api-doc/index.html)
 - [Cocos2d-x SDK](./ta-cocos2dx-api-doc/index.html)
 - [Corona SDK](./ta-corona-api-doc/index.html)
 - [Cocos2d-Lua SDK](./ta-cocos2d-lua-api-doc/index.html)
